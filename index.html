@@ -5,123 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aimrane Bara | Automation Expert</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(-45deg, #4facfe, #00f2fe, #43e97b, #38f9d7);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      color: #fff;
-      text-align: center;
-    }
+ <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f6f9;
+    color: #333;
+    text-align: center;
+  }
 
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
+  header {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    padding: 60px 20px 30px;
+    color: #fff;
+  }
 
-    header {
-      padding: 60px 20px 30px;
-    }
+  header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+  }
 
+  header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  }
+
+  h1 {
+    margin: 20px 0 10px;
+    font-size: 2.8em;
+    font-weight: bold;
+  }
+
+  h2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.3em;
+    opacity: 0.95;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #203a43;
+  }
+
+  section p, section li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .highlight-section {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .highlight-section h2 {
+    color: #2c5364;
+    text-align: center;
+  }
+
+  .highlight-section ul {
+    margin-left: 1.5rem;
+    color: #2c3e50;
+  }
+
+  .highlight-section img {
+    max-width: 100%;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .contact {
+    background-color: #203a43;
+    padding: 2rem;
+    color: #fff;
+  }
+
+  .contact a {
+    color: #25D366;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  @media (max-width: 600px) {
     header img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 6px solid #fff;
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
-      transition: transform 0.4s ease;
-    }
-
-    header img:hover {
-      transform: scale(1.08) rotate(2deg);
-      box-shadow: 0 0 35px rgba(255, 255, 255, 0.8);
+      width: 150px;
+      height: 150px;
     }
 
     h1 {
-      margin: 20px 0 10px;
-      font-size: 2.8em;
-      letter-spacing: 1px;
+      font-size: 2em;
     }
 
     h2 {
-      margin: 0 0 20px;
-      font-weight: 400;
-      font-size: 1.3em;
-      opacity: 0.95;
+      font-size: 1.1em;
     }
-
-    section {
-      padding: 2rem;
-      text-align: left;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .highlight-section {
-      background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      color: #004D40;
-    }
-
-    .highlight-section h2 {
-      color: #00796B;
-      text-align: center;
-      margin-bottom: 1.5rem;
-      font-size: 2.5rem;
-    }
-
-    .highlight-section ul {
-      margin-left: 1.5rem;
-      font-size: 1.1rem;
-      color: #00695C;
-    }
-
-    .highlight-section img {
-      max-width: 100%;
-      border-radius: 16px;
-      margin-bottom: 1rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    }
-
-    .contact {
-      padding: 2rem;
-      font-size: 1.1rem;
-      background-color: rgba(255,255,255,0.1);
-      border-top: 1px solid rgba(255,255,255,0.3);
-    }
-
-    .contact a {
-      margin: 0 10px;
-    }
-
-    @media (max-width: 600px) {
-      header img {
-        width: 160px;
-        height: 160px;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.1em;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
