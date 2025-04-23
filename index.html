@@ -1,121 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aimrane Bara | Automation Expert</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(-45deg, #4facfe, #00f2fe, #43e97b, #38f9d7);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
 
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-    background-size: cover;
-    color: #1a1a1a;
-    text-align: center;
-  }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
 
-  header {
-    padding: 50px 15px 25px;
-  }
+    header {
+      padding: 60px 20px 30px;
+    }
 
-  header img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid #ffffff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease;
-  }
-
-  header img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  }
-
-  h1 {
-    margin: 20px 0 10px;
-    font-size: 2.4em;
-    color: #222;
-  }
-
-  h2 {
-    margin: 0;
-    font-weight: 400;
-    font-size: 1.2em;
-    color: #444;
-    opacity: 0.9;
-  }
-
-  @media screen and (max-width: 480px) {
     header img {
-      width: 180px;
-      height: 180px;
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.8);
     }
 
     h1 {
-      font-size: 2em;
+      margin: 20px 0 10px;
+      font-size: 2.8em;
+      letter-spacing: 1px;
     }
 
     h2 {
-      font-size: 1em;
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 1.3em;
+      opacity: 0.95;
     }
-  }
-</style>
-  <section>
-    <h2>About Me</h2>
-    <p>I’m Aimrane Bara — the automation partner every smart business needs.
-You don’t need to waste time on repetitive tasks or miss out on trends anymore. I help e-commerce hustlers, agencies, and business owners work smarter, sell faster, and scale better.
 
-With powerful tools like n8n, Make.com, and custom-made scripts, I:
+    section {
+      padding: 2rem;
+      text-align: left;
+      max-width: 800px;
+      margin: auto;
+    }
 
-Build smart workflows that run your business while you sleep
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
 
-Create scripts that detect trending products before they go viral, so you can sell them before everyone else
+    .highlight-section {
+      background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      color: #004D40;
+    }
 
-Automate everything from customer replies to data syncing, saving you hours every day
+    .highlight-section h2 {
+      color: #00796B;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+    }
 
-Help you focus on selling more, not doing more
+    .highlight-section ul {
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+      color: #00695C;
+    }
 
+    .highlight-section img {
+      max-width: 100%;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
 
-If you’re tired of doing things the hard way — let’s flip the game.
-Work smart. Sell fast. Grow big.</p>
-  </section>
+    .contact {
+      padding: 2rem;
+      font-size: 1.1rem;
+      background-color: rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,255,255,0.3);
+    }
 
-  <section>
-<section style="background: linear-gradient(135deg, #E0F7FA, #E1F5FE); padding: 2rem; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); margin-bottom: 2rem;">
-  <h2 style="font-size: 2.5rem; color: #00796B; text-align: center; margin-bottom: 1.5rem;">What I Do</h2>
+    .contact a {
+      margin: 0 10px;
+    }
 
-  <img class="service-img" src="n8n_screenshot.jpg" alt="n8n workflow" style="max-width: 100%; border-radius: 16px; margin-bottom: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.12);" />
-  <p style="font-size: 1.2rem; color: #004D40; line-height: 1.8; margin-bottom: 2rem;">
-    <strong>n8n Automation:</strong><br>
-    I build <strong>smart automated systems</strong> using <span style="color: #26A69A;">n8n</span> that connect your favorite apps and services.
-    No more copying/pasting or wasting time on repetitive tasks. My workflows run your business even when you sleep. 
-    From lead capture to email replies, I help you <strong>eliminate manual work and scale with ease</strong>.
-  </p>
+    @media (max-width: 600px) {
+      header img {
+        width: 160px;
+        height: 160px;
+      }
 
-  <img class="service-img" src="script_example.jpg" alt="Script example" style="max-width: 100%; border-radius: 16px; margin-bottom: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.12);" />
-  <p style="font-size: 1.2rem; color: #004D40; line-height: 1.8;">
-    <strong>Custom Scripting:</strong><br>
-    I write <strong>tailor-made scripts</strong> for your business. They can:
-    <ul style="margin-left: 1.5rem; margin-top: 0.5rem; font-size: 1.1rem; color: #00695C;">
-      <li>Track and notify you about <strong>trending products</strong> before they go viral</li>
-      <li>Connect and sync tools like CRMs, Gmail, WhatsApp, and Google Sheets</li>
-      <li>Automate invoices, reports, customer replies, and data transfers</li>
-      <li>Boost your e-commerce or agency productivity instantly</li>
-    </ul>
-    If it’s repetitive, boring, or time-consuming — I automate it.
-  </p>
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Aimrane Bara">
+  <h1>Aimrane Bara</h1>
+  <h2>Automation Expert | n8n Developer | Script Wizard</h2>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>I’m Aimrane Bara — the automation partner every smart business needs. You don’t need to waste time on repetitive tasks or miss out on trends anymore. I help e-commerce hustlers, agencies, and business owners work smarter, sell faster, and scale better.</p>
+  <p>With powerful tools like n8n, Make.com, and custom-made scripts, I:</p>
+  <ul>
+    <li>Build smart workflows that run your business while you sleep</li>
+    <li>Create scripts that detect trending products before they go viral, so you can sell them before everyone else</li>
+    <li>Automate everything from customer replies to data syncing, saving you hours every day</li>
+    <li>Help you focus on selling more, not doing more</li>
+  </ul>
+  <p>If you’re tired of doing things the hard way — let’s flip the game. Work smart. Sell fast. Grow big.</p>
 </section>
 
-<!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<section class="highlight-section">
+  <h2>What I Do</h2>
+  <img src="n8n_screenshot.jpg" alt="n8n workflow">
+  <p><strong>n8n Automation:</strong><br>
+  I build <strong>smart automated systems</strong> using <span style="color: #26A69A;">n8n</span> that connect your favorite apps and services. No more copying/pasting or wasting time on repetitive tasks. My workflows run your business even when you sleep. From lead capture to email replies, I help you <strong>eliminate manual work and scale with ease</strong>.</p>
+
+  <img src="script_example.jpg" alt="Script example">
+  <p><strong>Custom Scripting:</strong><br>
+  I write <strong>tailor-made scripts</strong> for your business. They can:</p>
+  <ul>
+    <li>Track and notify you about <strong>trending products</strong> before they go viral</li>
+    <li>Connect and sync tools like CRMs, Gmail, WhatsApp, and Google Sheets</li>
+    <li>Automate invoices, reports, customer replies, and data transfers</li>
+    <li>Boost your e-commerce or agency productivity instantly</li>
+  </ul>
+  <p>If it’s repetitive, boring, or time-consuming — I automate it.</p>
+</section>
 
 <section class="contact">
   <p><strong>Contact:</strong>
-    <a href="https://wa.me/212626551379" target="_blank" style="color: #25D366; text-decoration: none;">
+    <a href="https://wa.me/212626551379" target="_blank" style="color: #25D366;">
       <i class="fab fa-whatsapp"></i> +212 626 551 379
     </a> |
-    <a href="mailto:imranewhait@gmail.com" style="color: #EA4335; text-decoration: none;">
+    <a href="mailto:imranewhait@gmail.com" style="color: #EA4335;">
       <i class="fas fa-envelope"></i> imranewhait@gmail.com
     </a>
   </p>
 </section>
+
 </body>
 </html>
